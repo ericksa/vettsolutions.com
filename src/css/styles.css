@@ -20,8 +20,8 @@
     --glass-shine: rgba(255, 255, 255, 0.25);
     
     /* Vibrant Accent Colors - Multiple gradients */
-    --color-primary: #ff6b35;          /* Warm orange */
-    --color-primary-glow: rgba(255, 107, 53, 0.4);
+    --color-primary: #00ff41;          /* Warm teal */
+    --color-primary-glow: rgba(0, 255, 65, 0.4);
     --color-secondary: #00d4aa;         /* Electric teal */
     --color-secondary-glow: rgba(0, 212, 170, 0.3);
     --color-accent: #ff3366;           /* Hot pink */
@@ -68,7 +68,7 @@
     
     /* Glass shadows */
     --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    --shadow-glow-orange: 0 0 40px rgba(255, 107, 53, 0.3);
+    --shadow-glow-teal: 0 0 40px rgba(0, 255, 65, 0.3);
     --shadow-glow-teal: 0 0 40px rgba(0, 212, 170, 0.3);
     --shadow-glow-purple: 0 0 40px rgba(139, 92, 246, 0.3);
     --shadow-glow-pink: 0 0 40px rgba(255, 51, 102, 0.3);
@@ -161,7 +161,7 @@ body {
 .orb-1 {
     width: 700px;
     height: 700px;
-    background: radial-gradient(circle, rgba(255, 107, 53, 0.25) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(0, 255, 65, 0.25) 0%, transparent 70%);
     top: -250px;
     right: -200px;
 }
@@ -303,7 +303,7 @@ a {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--color-primary);
+    background: var(--color-secondary);
     transition: width var(--transition-base);
 }
 
@@ -317,7 +317,7 @@ a {
 
 .nav-cta {
     padding: var(--space-xs) var(--space-md);
-    background: linear-gradient(135deg, var(--color-primary), #ff8c5a);
+    background: linear-gradient(135deg, var(--color-secondary), #00ff41);
     color: #000;
     font-weight: 600;
     font-size: 0.9rem;
@@ -328,7 +328,7 @@ a {
 
 .nav-cta:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-glow-orange);
+    box-shadow: var(--shadow-glow-teal);
 }
 
 .nav-toggle {
@@ -368,14 +368,14 @@ a {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--color-primary), #ff8c5a);
+    background: linear-gradient(135deg, var(--color-secondary), #00ff41);
     color: #000;
     box-shadow: 0 4px 20px var(--color-primary-glow);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-glow-orange);
+    box-shadow: var(--shadow-glow-teal);
 }
 
 .btn-secondary {
@@ -388,8 +388,8 @@ a {
 
 .btn-secondary:hover {
     background: var(--glass-highlight);
-    border-color: var(--color-primary);
-    color: var(--color-primary);
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
 }
 
 /* ---------------------------------------------------------------------------
@@ -455,7 +455,7 @@ a {
 .title-line:nth-child(3) { animation-delay: 0.3s; }
 
 .title-line.accent {
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 50%, var(--color-purple) 100%);
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-accent) 50%, var(--color-purple) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -513,7 +513,7 @@ a {
     font-family: var(--font-display);
     font-size: 2rem;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -522,7 +522,7 @@ a {
     font-family: var(--font-display);
     font-size: 2rem;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -660,7 +660,7 @@ a {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-purple));
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-secondary), var(--color-purple));
     opacity: 0;
     transition: opacity var(--transition-base);
 }
@@ -987,7 +987,7 @@ a {
 .past-card:hover {
     border-color: var(--color-primary-glow);
     transform: translateY(-5px);
-    box-shadow: var(--shadow-glow-orange);
+    box-shadow: var(--shadow-glow-teal);
 }
 
 .past-client {
@@ -1030,7 +1030,7 @@ a {
    --------------------------------------------------------------------------- */
 .cta {
     padding: var(--space-3xl) var(--space-lg);
-    background: linear-gradient(180deg, transparent 0%, rgba(255, 107, 53, 0.05) 50%, transparent 100%);
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 255, 65, 0.05) 50%, transparent 100%);
 }
 
 .cta-content {
@@ -1154,7 +1154,7 @@ a {
 }
 
 .footer-column a:hover {
-    color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 .footer-bottom {
