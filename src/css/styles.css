@@ -731,6 +731,121 @@ a {
 }
 
 /* ---------------------------------------------------------------------------
+   Certifications Section
+   --------------------------------------------------------------------------- */
+.certifications {
+    padding: var(--space-3xl) var(--space-lg);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.certifications .section-header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.section-desc {
+    max-width: 700px;
+    margin: var(--space-md) auto 0;
+    font-size: 1.1rem;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+    margin-bottom: var(--space-2xl);
+}
+
+.cert-card {
+    padding: var(--space-xl);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.cert-card:hover {
+    border-color: var(--color-secondary);
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 212, 170, 0.2);
+}
+
+.cert-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-md);
+}
+
+.cert-card h3 {
+    margin-bottom: var(--space-sm);
+    font-size: 1.25rem;
+}
+
+.cert-card p {
+    font-size: 0.9rem;
+}
+
+.eligibility-note {
+    background: rgba(0, 212, 170, 0.05);
+    border: 1px solid rgba(0, 212, 170, 0.2);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.eligibility-note h4 {
+    margin-bottom: var(--space-sm);
+    color: var(--color-secondary);
+}
+
+.eligibility-note > p {
+    margin-bottom: var(--space-md);
+}
+
+.eligibility-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
+    list-style: none;
+}
+
+.eligibility-list li {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    padding-left: var(--space-md);
+    position: relative;
+}
+
+.eligibility-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-secondary);
+}
+
+@media (max-width: 1024px) {
+    .certifications-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .eligibility-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .eligibility-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---------------------------------------------------------------------------
    CTA Section
    --------------------------------------------------------------------------- */
 .cta {
