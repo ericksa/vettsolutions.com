@@ -136,7 +136,7 @@ function initCounterAnimation() {
         const targetAttr = counter.dataset.target;
         const target = targetAttr ? parseInt(targetAttr) : counter.innerText;
         if (!targetAttr) return; // Skip animation for non-numeric values
-        const duration = 2000;
+        const duration = 3500;
         const start = 0;
         const startTime = performance.now();
         
