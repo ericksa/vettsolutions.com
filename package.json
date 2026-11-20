@@ -1,0 +1,17 @@
+{
+  "name": "vettsolutions",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Vet Tech Solutions - SDVOSB Government IT Consulting",
+  "scripts": {
+    "dev": "vitepress dev .",
+    "build": "vitepress build .",
+    "docs:build": "vitepress build .",
+    "preview": "vitepress preview .",
+    "deploy": "npm run build && gh-pages -d .vitepress/dist"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0"
+  },
+  "license": "MIT"
+}
