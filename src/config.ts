@@ -1,8 +1,12 @@
-import { defineConfigWithTheme } from 'vitepress'
+import { defineConfig } from 'vitepress'
 
-export default defineConfigWithTheme({
+export default defineConfig({
   title: 'Vet Tech Solutions',
   description: 'SDVOSB Government IT Consulting',
+  
+  // Use docs/ folder as the source root
+  srcDir: '.',
+  dir: 'docs',
   
   themeConfig: {
     nav: [
